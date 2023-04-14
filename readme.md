@@ -63,72 +63,64 @@ gradle clean apiTest
 
 Параметры сборки в Jenkins:
 
-- <code>TYPETEST</code> выбор типа тестов, из CI доступны:
-  - browserstackTest
-  - selenideTest
-  - apiTest
+<p align="center">
+<img src="images/screenshots/JenkinsJob.jpg"/></a>
+</p>
 
-#### Доп параметры для команды - selenideTest
-- <code>BROWSER</code> браузер, по умолчанию chrome
-- <code>VERSION</code> версия браузера, по умолчанию 100.0
-- <code>RESOLUTION</code> размер окна браузера, по умолчанию 1280x720
-- <code>REMOTE_URL</code> адрес удаленного сервера
-- <code>REMOTE_URL_VIDEO</code> адрес удаленного сервера
+<a id="allure"></a>
 
 [Вернуться к оглавлению](#Содержание)
 
-## Allure отчеты:
-### <img src="/images/logos/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_alfa/10/"> report</a>
-#### Основной отчет
+## Отчеты в Allure
+
+### Основное окно
+
 <p align="center">
-<img title="Allure Overview Dashboard" src="/images/screens/overviewReport.jpg">
+<img src="images/screenshots/AllureOverview.png">
 </p>
 
-#### Тесты
+### Тесты
+
 <p align="center">
-<img title="Allure Suites" src="/images/screens/testsReport.jpg">
+<img src="images/screenshots/AllureBehaviors.png">
 </p>
 
 [Вернуться к оглавлению](#Содержание)
 
-### <img src="/images/logos/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/20210"> TestOps</a>
-#### Основной отчет
+## Интеграция с Allure TestOps 
+
+### Тест-кейсы
 <p align="center">
-<img title="Allure Overview Dashboard" src="/images/screens/overviewOps.jpg">
+<img src="images/screenshots/AllureTestCases.png">
 </p>
 
-#### Тесты
+### Пример мануального тест-кейса
 <p align="center">
-<img title="Allure Suites" src="/images/screens/testsOps.jpg">
+<img src="images/screenshots/AllureTestOpsManualTest.png">
 </p>
 
-#### Пример ручных тестов
+### Пример запуска тест-кейсов
 <p align="center">
-  <img title="Allure TestOps manual tests" src="/images/screens/manual.jpg">
+<img src="images/screenshots/AllureTestOpsLaunches.png">
 </p>
 
-[Вернуться к оглавлению](#Содержание)
-
-## <img src="/images/logos/Telegram.svg" width="25" height="25"  alt="Telegram"/>Telegram уведомления</a>
-После завершения сборки специальный бот, созданный в Telegram, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
+<a id="jira"></a>
+## Интеграция с Jira 
 <p align="center">
-<img title="Allure Overview Dashboard" src="/images/screens/telegram.jpg">
+<img src="images/screenshots/Jira.png">
 </p>
 
-[Вернуться к оглавлению](#Содержание)
+<a id="telegram"></a>
+## Уведомления в Telegram с использованием бота
 
-## <img src="/images/logos/Jira.svg" width="25" height="25" alt="Jira"/>Jira интеграция</a>
-<p align="center">
-  <img title="Allure TestOps overview" src="/images/screens/jira.jpg">
+<p>
+<img src="images/screenshots/TelegramBot.png">
 </p>
 
-[Вернуться к оглавлению](#Содержание)
+<a id="video"></a>
+## Пример прогона теста в Selenoid
 
-## <img src="/images/logos/Selenoid.svg" width="25" height="25" alt="Selenoid"/>Selenoid видеозапись тестов</a>
-### Видео запись прохождения тестов
+> К каждому тесту в отчете прилагается видео
 <p align="center">
-  <img title="Selenoid video for test4" src="/images/gif/videoWeb.gif">
-  <img title="Selenoid video for test4" src="/images/gif/vidoMobile.gif">
+  <img src="images/video/VideoGif.gif">
 </p>
-
-[Вернуться к оглавлению](#Содержание)
