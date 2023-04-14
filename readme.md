@@ -52,7 +52,9 @@ src/test/resources
 #### Команды запуска тестов 
 API тесты
 ```
-gradle clean apiTests
+gradle clean test
+gradle clean negative
+gradle clean positive
 ```
 
 [Вернуться к оглавлению](#Содержание)
@@ -60,48 +62,37 @@ gradle clean apiTests
 ## Запуск тестов в Jenkins
 
 > Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
-
-Параметры сборки в Jenkins:
-
 <p align="center">
 <img src="images/screenshots/JenkinsJob.jpg"/></a>
 </p>
 
 <a id="allure"></a>
-
-[Вернуться к оглавлению](#Содержание)
-
 ## Отчеты в Allure
 
 ### Основное окно
 
 <p align="center">
-<img src="images/screenshots/AllureOverview.png">
+<img src="images/screenshots/AllureReport.jpg">
 </p>
 
 ### Тесты
 
 <p align="center">
-<img src="images/screenshots/AllureBehaviors.png">
+<img src="images/screenshots/AllureTestsNew.jpg">
 </p>
 
-[Вернуться к оглавлению](#Содержание)
-
+<a id="testops"></a>
 ## Интеграция с Allure TestOps 
 
 ### Тест-кейсы
 <p align="center">
-<img src="images/screenshots/AllureTestCases.png">
+<img src="images/screenshots/testCases.jpg">
 </p>
 
-### Пример мануального тест-кейса
-<p align="center">
-<img src="images/screenshots/AllureTestOpsManualTest.png">
-</p>
 
 ### Пример запуска тест-кейсов
 <p align="center">
-<img src="images/screenshots/AllureTestOpsLaunches.png">
+<img src="images/screenshots/Launches.jpg">
 </p>
 
 <a id="jira"></a>
@@ -115,12 +106,4 @@ gradle clean apiTests
 
 <p>
 <img src="images/screenshots/TelegramBot.png">
-</p>
-
-<a id="video"></a>
-## Пример прогона теста в Selenoid
-
-> К каждому тесту в отчете прилагается видео
-<p align="center">
-  <img src="images/video/VideoGif.gif">
 </p>
