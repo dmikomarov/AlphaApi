@@ -25,23 +25,19 @@
 - [x] Интеграция с `Jira`
 
 
-## <img src="/images/logos/utils.svg" width="25" height="25"  alt="utils"/><a name="Стек технологий">Стек технологий</a>
+## Технологии и инструменты
+
 <p align="center">
-<a href="https://www.jetbrains.com/idea/"><img src="/images/logos/IDEA.svg" width="50" height="50"  alt="IDEA"/></a>
-<a href="https://www.java.com/"><img src="/images/logos/Java.svg" width="50" height="50"  alt="Java"/></a>
-<a href="https://github.com/"><img src="/images/logos/Github.svg" width="50" height="50"  alt="Github"/></a>
-<a href="https://junit.org/junit5/"><img src="/images/logos/JUnit5.svg" width="50" height="50"  alt="JUnit5"/></a>
-<a href="https://gradle.org/"><img src="/images/logos/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
-<a href="https://appium.io/"><img src="/images/logos/appium.svg" width="50" height="50"  alt="appium"/></a>
-<a href="https://selenide.org/"><img src="/images/logos/rest-assured-logo.svg" width="50" height="50"  alt="rest-assured"/></a>
-<a href="https://selenide.org/"><img src="/images/logos/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
-<a href="https://www.browserstack.com//"><img src="/images/logos/browserstack.svg" width="50" height="50"  alt="browserstack"/></a>
-<a href="https://aerokube.com/selenoid/"><img src="/images/logos/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
-<a href="https://github.com/allure-framework/allure2"><img src="/images/logos/Allure.svg" width="50" height="50"  alt="Allure"/></a>
-<a href="https://www.jenkins.io/"><img src="/images/logos/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
-<a href="https://qameta.io/"><img src="/images/logos/Allure_TO.svg" width="50" height="50"  alt="Allure TestOps"/></a>
-<a href="https://www.atlassian.com/software/jira/"><img src="/images/logos/Jira.svg" width="50" height="50"  alt="Jira"/></a>
-<a href="https://web.telegram.org/"><img src="/images/logos/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>
+<img width="6%" title="IntelliJ IDEA" src="images/logo/IntelliJ_IDEA.png">
+<img width="6%" title="Java" src="images/logo/Java_logo.png">
+<img width="6%" title="Selenide" src="images/logo/Selenide.png">
+<img width="6%" title="Selenoid" src="images/logo/Selenoid.png">
+<img width="6%" title="Allure Report" src="images/logo/AllureReports.png">
+<img width="6%" title="Gradle" src="images/logo/Gradle.png">
+<img width="6%" title="JUnit5" src="images/logo/JUnit5.png">
+<img width="6%" title="GitHub" src="images/logo/GitHub.png">
+<img width="6%" title="Jenkins" src="images/logo/Jenkins.png">
+<img width="6%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
 </p>
 
 ## <img src="/images/logos/terminal.png" width="25" height="25"  alt="terminal"/><a name="Запуск тестов">Запуск тестов</a>
