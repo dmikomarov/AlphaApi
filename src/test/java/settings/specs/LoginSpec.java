@@ -5,7 +5,6 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-
 import static io.restassured.RestAssured.with;
 import static settings.helpers.CustomAllureListener.withCustomTemplates;
 
@@ -17,10 +16,8 @@ public class LoginSpec {
             .log().headers()
             .log().body()
             .contentType(ContentType.JSON)
-//            .baseUri("https://web.rbsuat.com/ab/")
-//            .basePath("rest/");
             .baseUri("https://alfabank.ru/");
-    //            .basePath("rest/");
+
     public static RequestSpecification requestSpecificationLogin = with()
             .filter(withCustomTemplates())
             .log().uri()

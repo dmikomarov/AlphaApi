@@ -1,14 +1,11 @@
 package tests;
 
 import io.qameta.allure.Allure;
-import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
-import jdk.jfr.Label;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import settings.model.RegisterBody;
 import settings.model.ResponseModel;
@@ -16,7 +13,6 @@ import settings.model.ResponseModel;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.is;
 import static settings.specs.LoginSpec.*;
-
 
 
 public class Api {
