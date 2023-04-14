@@ -57,7 +57,10 @@ gradle clean apiTest
 
 [Вернуться к оглавлению](#Содержание)
 
-## <img src="/images/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/><a name="Jenkins">Jenkins</a><a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_alfa/"> job</a>
+## Запуск тестов в Jenkins
+
+> Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
+
 Параметры сборки в Jenkins:
 
 - <code>TYPETEST</code> выбор типа тестов, из CI доступны:
