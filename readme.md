@@ -49,25 +49,8 @@ src/test/resources
 Креды вынесены в отдельный конфиг файл - `credential.properties`\
 Ожидаемые конфиги прописаны у соответсвующих команд.
 
-#### Команды запуска тестов на различных платформах
-Mobile тесты (android):\
-emulationTest - используется эмулятор, `local.properties`\
-realTest - используется реальное устройство, `real.properties`\
-browserstackTest - используется сервис browserstack, `browserstack.properties`
-```
-gradle clean emulationTest
-gradle clean realTest
-gradle clean browserstackTest
-```
-Веб тесты:\
-localTest - используется эмулятор, `local.properties`\
-selenideTest - используется реальное устройство, `selenide.properties`
-```
-gradle clean localTest
-gradle clean selenideTest
-```
+#### Команды запуска тестов 
 API тесты:\
-apiTest - используется эмулятор, `api.properties`
 ```
 gradle clean apiTest
 ```
