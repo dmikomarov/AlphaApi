@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.is;
 import static settings.specs.LoginSpec.*;
 
 
-@DisplayName("Api тесты")
+
 public class Api {
 
     @Test
