@@ -1,7 +1,4 @@
-<h2 align="center"> Проект по автоматизации тестирования для Альфа-Банк</h2>
-<p  align="center">
-<a href="https://alfabank.ru/"><img src="./images/logos/alfabank.png" width="950"></a>
-</p>
+<h1 >Проект автоматизации API для сайта <a href="https://alfabank.ru/ ">alfabank.ru</a></h1>
 
 ## <a name="Содержание">Содержание</a>
 + [Описание](#Описание)
