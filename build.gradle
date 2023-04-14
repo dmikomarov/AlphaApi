@@ -54,12 +54,13 @@ test {
 }
 
 
-
-tasks.register('apiTest', Test) {
-    System.setProperty("env", "api")
-    System.setProperty("sys", "web")
-    systemProperties(System.getProperties())
+task positive(type: Test){
     useJUnitPlatform {
-        includeTags("api")
-        exclude("front")
-    }}
+        includeTags("positive")
+    }
+}
+task negative(type: Test){
+    useJUnitPlatform {
+        includeTags("negative")
+    }
+}

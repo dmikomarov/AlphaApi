@@ -20,7 +20,16 @@ public class LoginSpec {
 //            .baseUri("https://web.rbsuat.com/ab/")
 //            .basePath("rest/");
             .baseUri("https://alfabank.ru/");
-//            .basePath("rest/");
+    //            .basePath("rest/");
+    public static RequestSpecification requestSpecificationLogin = with()
+            .filter(withCustomTemplates())
+            .log().uri()
+            .log().headers()
+            .log().body()
+            .contentType(ContentType.JSON)
+            .baseUri("https://private.auth.alfabank.ru/passport/cerberus-mini-green/dashboard-green/")
+            .basePath("api/oid/authorize");
+
 
     public static ResponseSpecification responseSpecification = new ResponseSpecBuilder()
             .log(LogDetail.STATUS)
@@ -33,4 +42,19 @@ public class LoginSpec {
             .log(LogDetail.BODY)
             .expectStatusCode(400)
             .build();
+
+    public static ResponseSpecification responseSpecification500 = new ResponseSpecBuilder()
+            .log(LogDetail.STATUS)
+            .log(LogDetail.BODY)
+            .expectStatusCode(500)
+            .build();
+
+    public static RequestSpecification requestSpecificationWeb = with()
+            .filter(withCustomTemplates())
+            .log().uri()
+            .log().headers()
+            .log().body()
+            .contentType(ContentType.JSON)
+            .baseUri("https://web.rbsuat.com/ab/")
+            .basePath("rest/");
 }

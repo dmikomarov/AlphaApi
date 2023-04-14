@@ -14,6 +14,5 @@ public class RequestModel {
     private String name;
     private String password;
     private String startDate;
-    private Type type;
     private String username;
 }
