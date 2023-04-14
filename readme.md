@@ -50,15 +50,20 @@ src/test/resources
 Ожидаемые конфиги прописаны у соответсвующих команд.
 
 #### Команды запуска тестов 
-API тесты:
+API тесты:\
 ```
 gradle clean apiTest
 ```
 
 [Вернуться к оглавлению](#Содержание)
 
-## <img src="images/logo/Jenkins.png" width="25" height="25"  alt="Jenkins"/><a name="Jenkins">Jenkins</a><a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_alfa/"> job</a>
+## <img src="/images/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/><a name="Jenkins">Jenkins</a><a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_alfa/"> job</a>
 Параметры сборки в Jenkins:
+
+- <code>TYPETEST</code> выбор типа тестов, из CI доступны:
+  - browserstackTest
+  - selenideTest
+  - apiTest
 
 #### Доп параметры для команды - selenideTest
 - <code>BROWSER</code> браузер, по умолчанию chrome
@@ -69,8 +74,8 @@ gradle clean apiTest
 
 [Вернуться к оглавлению](#Содержание)
 
-## <img ssrc="images/logo/AllureReports.png" width="25" height="25"  alt="report"/>Allure отчеты:
-### <img src="images/logo/AllureReports.png" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_alfa/10/"> report</a>
+## Allure отчеты:
+### <img src="/images/logos/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_alfa/10/"> report</a>
 #### Основной отчет
 <p align="center">
 <img title="Allure Overview Dashboard" src="/images/screens/overviewReport.jpg">
