@@ -25,26 +25,22 @@
 - [x] Интеграция с `Jira`
 
 
-## <img src="/images/logos/utils.svg" width="25" height="25"  alt="utils"/><a name="Стек технологий">Стек технологий</a>
+## Технологии и инструменты
+
 <p align="center">
-<a href="https://www.jetbrains.com/idea/"><img src="/images/logos/IDEA.svg" width="50" height="50"  alt="IDEA"/></a>
-<a href="https://www.java.com/"><img src="/images/logos/Java.svg" width="50" height="50"  alt="Java"/></a>
-<a href="https://github.com/"><img src="/images/logos/Github.svg" width="50" height="50"  alt="Github"/></a>
-<a href="https://junit.org/junit5/"><img src="/images/logos/JUnit5.svg" width="50" height="50"  alt="JUnit5"/></a>
-<a href="https://gradle.org/"><img src="/images/logos/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
-<a href="https://appium.io/"><img src="/images/logos/appium.svg" width="50" height="50"  alt="appium"/></a>
-<a href="https://selenide.org/"><img src="/images/logos/rest-assured-logo.svg" width="50" height="50"  alt="rest-assured"/></a>
-<a href="https://selenide.org/"><img src="/images/logos/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
-<a href="https://www.browserstack.com//"><img src="/images/logos/browserstack.svg" width="50" height="50"  alt="browserstack"/></a>
-<a href="https://aerokube.com/selenoid/"><img src="/images/logos/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
-<a href="https://github.com/allure-framework/allure2"><img src="/images/logos/Allure.svg" width="50" height="50"  alt="Allure"/></a>
-<a href="https://www.jenkins.io/"><img src="/images/logos/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
-<a href="https://qameta.io/"><img src="/images/logos/Allure_TO.svg" width="50" height="50"  alt="Allure TestOps"/></a>
-<a href="https://www.atlassian.com/software/jira/"><img src="/images/logos/Jira.svg" width="50" height="50"  alt="Jira"/></a>
-<a href="https://web.telegram.org/"><img src="/images/logos/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>
+<img width="6%" title="IntelliJ IDEA" src="images/logo/IntelliJ_IDEA.png">
+<img width="6%" title="Java" src="images/logo/Java_logo.png">
+<img width="6%" title="Selenide" src="images/logo/Selenide.png">
+<img width="6%" title="Selenoid" src="images/logo/Selenoid.png">
+<img width="6%" title="Allure Report" src="images/logo/AllureReports.png">
+<img width="6%" title="Gradle" src="images/logo/Gradle.png">
+<img width="6%" title="JUnit5" src="images/logo/JUnit5.png">
+<img width="6%" title="GitHub" src="images/logo/GitHub.png">
+<img width="6%" title="Jenkins" src="images/logo/Jenkins.png">
+<img width="6%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
 </p>
 
-## <img src="/images/logos/terminal.png" width="25" height="25"  alt="terminal"/><a name="Запуск тестов">Запуск тестов</a>
+## <a name="Запуск тестов">Запуск тестов</a>
 #### Про конфигурации
 Файлы конфигурации должны находиться по пути:
 ```
@@ -53,100 +49,78 @@ src/test/resources
 Креды вынесены в отдельный конфиг файл - `credential.properties`\
 Ожидаемые конфиги прописаны у соответсвующих команд.
 
-#### Команды запуска тестов на различных платформах
-Mobile тесты (android):\
-emulationTest - используется эмулятор, `local.properties`\
-realTest - используется реальное устройство, `real.properties`\
-browserstackTest - используется сервис browserstack, `browserstack.properties`
+#### Команды запуска тестов 
+API тесты
 ```
-gradle clean emulationTest
-gradle clean realTest
-gradle clean browserstackTest
-```
-Веб тесты:\
-localTest - используется эмулятор, `local.properties`\
-selenideTest - используется реальное устройство, `selenide.properties`
-```
-gradle clean localTest
-gradle clean selenideTest
-```
-API тесты:\
-apiTest - используется эмулятор, `api.properties`
-```
-gradle clean apiTest
+gradle clean apiTests
 ```
 
 [Вернуться к оглавлению](#Содержание)
 
-## <img src="/images/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/><a name="Jenkins">Jenkins</a><a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_alfa/"> job</a>
+## Запуск тестов в Jenkins
+
+> Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
+
 Параметры сборки в Jenkins:
 
-- <code>TYPETEST</code> выбор типа тестов, из CI доступны:
-  - browserstackTest
-  - selenideTest
-  - apiTest
+<p align="center">
+<img src="images/screenshots/JenkinsJob.jpg"/></a>
+</p>
 
-#### Доп параметры для команды - selenideTest
-- <code>BROWSER</code> браузер, по умолчанию chrome
-- <code>VERSION</code> версия браузера, по умолчанию 100.0
-- <code>RESOLUTION</code> размер окна браузера, по умолчанию 1280x720
-- <code>REMOTE_URL</code> адрес удаленного сервера
-- <code>REMOTE_URL_VIDEO</code> адрес удаленного сервера
+<a id="allure"></a>
 
 [Вернуться к оглавлению](#Содержание)
 
-## <img src="/images/logos/report.png" width="25" height="25"  alt="report"/>Allure отчеты:
-### <img src="/images/logos/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_alfa/10/"> report</a>
-#### Основной отчет
+## Отчеты в Allure
+
+### Основное окно
+
 <p align="center">
-<img title="Allure Overview Dashboard" src="/images/screens/overviewReport.jpg">
+<img src="images/screenshots/AllureOverview.png">
 </p>
 
-#### Тесты
+### Тесты
+
 <p align="center">
-<img title="Allure Suites" src="/images/screens/testsReport.jpg">
+<img src="images/screenshots/AllureBehaviors.png">
 </p>
 
 [Вернуться к оглавлению](#Содержание)
 
-### <img src="/images/logos/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/20210"> TestOps</a>
-#### Основной отчет
+## Интеграция с Allure TestOps 
+
+### Тест-кейсы
 <p align="center">
-<img title="Allure Overview Dashboard" src="/images/screens/overviewOps.jpg">
+<img src="images/screenshots/AllureTestCases.png">
 </p>
 
-#### Тесты
+### Пример мануального тест-кейса
 <p align="center">
-<img title="Allure Suites" src="/images/screens/testsOps.jpg">
+<img src="images/screenshots/AllureTestOpsManualTest.png">
 </p>
 
-#### Пример ручных тестов
+### Пример запуска тест-кейсов
 <p align="center">
-  <img title="Allure TestOps manual tests" src="/images/screens/manual.jpg">
+<img src="images/screenshots/AllureTestOpsLaunches.png">
 </p>
 
-[Вернуться к оглавлению](#Содержание)
-
-## <img src="/images/logos/Telegram.svg" width="25" height="25"  alt="Telegram"/>Telegram уведомления</a>
-После завершения сборки специальный бот, созданный в Telegram, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
+<a id="jira"></a>
+## Интеграция с Jira 
 <p align="center">
-<img title="Allure Overview Dashboard" src="/images/screens/telegram.jpg">
+<img src="images/screenshots/Jira.png">
 </p>
 
-[Вернуться к оглавлению](#Содержание)
+<a id="telegram"></a>
+## Уведомления в Telegram с использованием бота
 
-## <img src="/images/logos/Jira.svg" width="25" height="25" alt="Jira"/>Jira интеграция</a>
-<p align="center">
-  <img title="Allure TestOps overview" src="/images/screens/jira.jpg">
+<p>
+<img src="images/screenshots/TelegramBot.png">
 </p>
 
-[Вернуться к оглавлению](#Содержание)
+<a id="video"></a>
+## Пример прогона теста в Selenoid
 
-## <img src="/images/logos/Selenoid.svg" width="25" height="25" alt="Selenoid"/>Selenoid видеозапись тестов</a>
-### Видео запись прохождения тестов
+> К каждому тесту в отчете прилагается видео
 <p align="center">
-  <img title="Selenoid video for test4" src="/images/gif/videoWeb.gif">
-  <img title="Selenoid video for test4" src="/images/gif/vidoMobile.gif">
+  <img src="images/video/VideoGif.gif">
 </p>
-
-[Вернуться к оглавлению](#Содержание)
