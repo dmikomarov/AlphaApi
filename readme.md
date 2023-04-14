@@ -40,7 +40,7 @@
 <img width="6%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
 </p>
 
-## <img src="/images/logos/terminal.png" width="25" height="25"  alt="terminal"/><a name="Запуск тестов">Запуск тестов</a>
+## alt="terminal"/><a name="Запуск тестов">Запуск тестов</a>
 #### Про конфигурации
 Файлы конфигурации должны находиться по пути:
 ```
